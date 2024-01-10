@@ -6,22 +6,26 @@
 # 
 
 def add(list, item):
+  list.append(item)
   pass
 
 
 def remove(list, index):
+  list.pop(index)
   pass
 
 
 def clear(list):
+  list.clear()
   pass
 
 
 def print_list(list):
+  print(list)
   pass
 
 
-list = []
+list = ["Покушать", "Выбросить Мусор", "Сделать домашнее задание","Сходить в магазин"]
 print("List is empty now, what you want to do?")
 while True:
   choice = int(input("1. Add\n2. Remove\n3. Clear\n4. Print list\n"))
